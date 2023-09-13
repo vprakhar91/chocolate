@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #3498db;
+}
+
+.chocolates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chocolate {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex-basis: calc(33.33% - 40px);
+    margin-bottom: 20px;
+}
+
+.chocolate img {
+    max-width: 100%;
+    height: auto;
+}
+
+.add-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #2980b9;
+}
+
+.custom-pack {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-pack h2 {
+    font-size: 24px;
+}
+
+#selected-chocolates {
+    list-style-type: none;
+    padding: 0;
+}
+
+#selected-chocolates li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .chocolate {
+        flex-basis: calc(50% - 40px);
+    }
+}
